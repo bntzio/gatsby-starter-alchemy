@@ -1,0 +1,29 @@
+.page {
+  lost-column: 1/1 0 0;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media (--tablet) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media (--desktop) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &-container {
+    lost-center: 980px;
+    lost-align: center;
+    text-align: center;
+    margin-top: 30px;
+
+    &-title {}
+      
+    &-body {
+      font-size: responsive 15px 20px;
+      line-height: 1.5;
+    }
+  }
+}

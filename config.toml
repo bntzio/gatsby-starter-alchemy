@@ -1,0 +1,4 @@
+siteTitle="Alchemy"
+siteDescription="A Gatsby starter with PostCSS powers"
+
+linkPrefix = "/gatsby-starter-alchemy"

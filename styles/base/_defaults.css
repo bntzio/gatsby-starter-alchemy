@@ -1,0 +1,55 @@
+@lost flexbox flex;
+
+body {
+  background-color: var(--bgColor);
+  color: white;
+  font-size: responsive 14px 18px;
+}
+
+.main {
+  lost-column: 1/1;
+  margin-top: 210px;
+  font-size: responsive 14px 21px;
+
+  &-container {
+    text-align: center;
+
+    &-title {}
+
+    &-subtitle {}
+
+    &-links {
+      & > ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 0;
+
+        & li {
+          padding: 6px 0;
+
+          & > a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  &-footer {
+    lost-column: 1/1;
+    lost-align: right;
+    position: absolute;
+    bottom: 5px;
+    right: 35px;
+
+    & > p {
+      font-size: 12px;
+      color: whitesmoke;
+
+      & > a {
+        color: whitesmoke;
+        text-decoration: none;
+      }
+    }
+  }
+}

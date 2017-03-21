@@ -1,0 +1,63 @@
+.logo.fixed {
+  position: fixed;
+  margin: auto;
+  top: 12px;
+  left: 12px;
+  width: calc(100px/2+10px);
+  height: calc(100px/2+10px);
+  background: transparent;
+}
+
+.logo.centre {
+  position: absolute;
+  margin: auto;
+  top: 90px;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+
+.logo {
+  &-outerCircle {
+    position: absolute;
+    background: transparent;
+    border-radius: 100%;
+    width: 90%;
+    height: 90%;
+    top: 1%;
+    left: 1%;
+    border: 4px solid var(--logoOuter);
+
+    &-triangle {
+      position: absolute;
+      width: 80%;
+      height: 80%;
+      left: 10%;
+      background: var(--logoTriangle);
+      -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+      &-square {
+        position: absolute;
+        width: 45%;
+        height: 45%;
+        bottom: 1%;
+        left: 27.5%;
+        background: var(--logoSquareInner);
+        border: 2px solid var(--logoSquareBorder);
+
+        &-innerCircle {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          bottom: 0;
+          background: var(--logoCircle);
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}
