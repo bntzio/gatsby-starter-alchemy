@@ -4,16 +4,20 @@ import { prefixLink } from 'gatsby-helpers';
 
 class Post extends React.Component {
   componentWillMount() {
-    const body = document.getElementsByTagName('body');
-    const css = body[0].style;
-    css.color = '#333';
-    css.backgroundColor = '#fff';
+    if (typeof window !== 'undefined') {
+      const body = document.getElementsByTagName('body');
+      const css = body[0].style;
+      css.color = '#333';
+      css.backgroundColor = '#fff';
+    }
   }
   componentWillUnmount() {
-    const body = document.getElementsByTagName('body');
-    const css = body[0].style;
-    css.color = '#fff';
-    css.backgroundColor = '#2b4496';
+    if (typeof window !== 'undefined') {
+      const body = document.getElementsByTagName('body');
+      const css = body[0].style;
+      css.color = '#fff';
+      css.backgroundColor = '#2b4496';
+    }
   }
   render() {
     const { route } = this.props;

@@ -7,16 +7,20 @@ import Article from './Article';
 
 class ArticlesList extends React.Component {
   componentWillMount() {
-    const body = document.getElementsByTagName('body');
-    const css = body[0].style;
-    css.color = '#fff';
-    css.backgroundColor = '#4938aa';
+    if (typeof window !== 'undefined') {
+      const body = document.getElementsByTagName('body');
+      const css = body[0].style;
+      css.color = '#fff';
+      css.backgroundColor = '#4938aa';
+    }
   }
   componentWillUnmount() {
-    const body = document.getElementsByTagName('body');
-    const css = body[0].style;
-    css.color = '#fff';
-    css.backgroundColor = '#2b4496';
+    if (typeof window !== 'undefined') {
+      const body = document.getElementsByTagName('body');
+      const css = body[0].style;
+      css.color = '#fff';
+      css.backgroundColor = '#2b4496';
+    }
   }
   renderPosts(route) {
     const posts = [];
