@@ -6,6 +6,20 @@ body {
   font-size: responsive 14px 18px;
 }
 
+a {
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+  &:visited {
+    color: white;
+  }
+  &:focus {
+    color: white;
+  }
+}
+
 .main {
   lost-column: 1/1;
   margin-top: 210px;
