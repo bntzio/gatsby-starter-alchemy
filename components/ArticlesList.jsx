@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import uuid from 'node-uuid';
+import moment from 'moment';
+import _ from 'lodash';
 
 import Article from './Article';
 
@@ -30,8 +32,12 @@ class ArticlesList extends React.Component {
       }
     });
 
-    return posts.map((post) => {
-      return <Article key={uuid()} data={post.data} />;
+    const ordered = _.sortBy(posts, (o) => {
+      return new moment(o.data.date);
+    }).reverse();
+
+    return ordered.map((orderedPost) => {
+      return <Article key={uuid()} data={orderedPost.data} />;
     });
   }
   render() {
