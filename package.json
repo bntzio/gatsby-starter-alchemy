@@ -30,7 +30,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "classnames": "^2.1.2",
     "front-matter": "^2.1.0",
-    "gatsby": "^0.12.28",
+    "gatsby": "^0.12.39",
     "history": "^2.1.2",
     "jquery": "^3.2.0",
     "lodash": "^4.17.2",

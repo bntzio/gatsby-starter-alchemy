@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
-const $ = require('jquery/dist/jquery')(window);
+import $ from 'jquery';
 
 class Post extends React.Component {
   componentWillMount() {

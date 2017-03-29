@@ -10,7 +10,7 @@ export default class Index extends React.Component {
     return (
       <div className="main">
         <div className="main-container">
-          <Helmet title={config.siteTitle} meta={[{"name": "description", "content": "sample"}]} />
+          <Helmet title={config.siteTitle} meta={[{ 'name': 'description', 'content': 'sample' }]} />
 
           <div className="logo centre">
             <div className="logo-outerCircle">

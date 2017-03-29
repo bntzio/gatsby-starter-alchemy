@@ -10,7 +10,6 @@ import '../styles/markdown-styles.css';
 
 class MarkdownWrapper extends React.Component {
   render() {
-    var hello = 19;
     const { route } = this.props;
     const post = route.page.data;
     const layout = post.layout;

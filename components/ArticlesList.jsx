@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import uuid from 'node-uuid';
-const $ = require('jquery/dist/jquery')(window);
+import $ from 'jquery';
 
 import Article from './Article';
 
