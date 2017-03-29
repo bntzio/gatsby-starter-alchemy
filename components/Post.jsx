@@ -1,18 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
-import $ from 'jquery';
 
 class Post extends React.Component {
   componentWillMount() {
-    const $body = $('body');
-    $body.css('color', '#333333');
-    $body.css('background-color', 'white');
+    const body = document.getElementsByTagName('body');
+    const css = body[0].style;
+    css.color = '#333';
+    css.backgroundColor = '#fff';
   }
   componentWillUnmount() {
-    const $body = $('body');
-    $body.css('color', 'white');
-    $body.css('background-color', '#2b4496');
+    const body = document.getElementsByTagName('body');
+    const css = body[0].style;
+    css.color = '#fff';
+    css.backgroundColor = '#2b4496';
   }
   render() {
     const { route } = this.props;

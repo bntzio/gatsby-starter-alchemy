@@ -2,20 +2,21 @@ import React from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import uuid from 'node-uuid';
-import $ from 'jquery';
 
 import Article from './Article';
 
 class ArticlesList extends React.Component {
   componentWillMount() {
-    const $body = $('body');
-    $body.css('color', 'white');
-    $body.css('background-color', '#4938aa');
+    const body = document.getElementsByTagName('body');
+    const css = body[0].style;
+    css.color = '#fff';
+    css.backgroundColor = '#4938aa';
   }
   componentWillUnmount() {
-    const $body = $('body');
-    $body.css('color', 'white');
-    $body.css('background-color', '#2b4496');
+    const body = document.getElementsByTagName('body');
+    const css = body[0].style;
+    css.color = '#fff';
+    css.backgroundColor = '#2b4496';
   }
   renderPosts(route) {
     const posts = [];
