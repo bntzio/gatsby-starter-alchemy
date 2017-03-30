@@ -1,7 +1,8 @@
-![Alchemy](https://cl.ly/jmH1/alchemy-logo.png)
+<p align="center"><img width="125" src="https://cl.ly/jmH1/alchemy-logo.png"></p>
 
-# Alchemy
-A [Gatsby](https://github.com/gatsbyjs/gatsby) starter with PostCSS powers.
+<h1 align="center">Alchemy</h1>
+
+<p align="center">A <a href="https://github.com/gatsbyjs/gatsby" tagret="_blank">Gatsby</a> starter with <a href="postcss.org" target="_blank">PostCSS</a> powers</p>
 
 ## What is Alchemy?
 Alchemy is a Gatsby starter with PostCSS powers, you get the power of Gatsby and the power of PostCSS.
