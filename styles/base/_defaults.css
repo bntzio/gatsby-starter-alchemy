@@ -27,12 +27,17 @@ a {
   font-size: responsive 14px 21px;
 
   &-container {
+    display: table-cell;
     text-align: center;
     vertical-align: middle;
 
     &-title {}
 
-    &-subtitle {}
+    &-subtitle {
+      h3 {
+        font-size: responsive 14px 21px;
+      }
+    }
 
     &-links {
       & > ul {
