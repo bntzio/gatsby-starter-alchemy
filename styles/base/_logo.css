@@ -9,9 +9,8 @@
 }
 
 .logo.centre {
-  position: absolute;
+  position: relative;
   margin: auto;
-  top: 90px;
   right: 0;
   bottom: auto;
   left: 0;

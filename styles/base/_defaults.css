@@ -21,12 +21,14 @@ a {
 }
 
 .main {
-  lost-column: 1/1;
-  margin-top: 210px;
+  display: table;
+  width: 100%;
+  height: 100vh;
   font-size: responsive 14px 21px;
 
   &-container {
     text-align: center;
+    vertical-align: middle;
 
     &-title {}
 
